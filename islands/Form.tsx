@@ -30,13 +30,16 @@ const Form = () => {
   };
 
   return (
-    <div class="flex flex-col p-4 items-center border w-full">
+    <div class="flex flex-col p-4 items-center w-full">
       <form onSubmit={handleSubmit} class="flex flex-col py-4 gap-y-5 w-2/6">
+        <label htmlFor="input" class="ml-1">Input your prompt:</label>
         <textarea
+          name="input"
           type="text"
           value={inputValue}
           onChange={handleChange}
           class="border border-gray-800 rounded bg-gray-600 bloc w-full focus:outline-none px-2"
+          rows={4}
         />
         <button
           type="submit"

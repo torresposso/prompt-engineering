@@ -8,6 +8,9 @@ export default function Home() {
   return (
     <>
       <div class="h-screen text-white mx-auto">
+        <h1 class="text-center py-2 font-semibold text-4xl font-mono italic">
+          ChatGPT Prompt Engineering for Developers
+        </h1>
         <Form />
       </div>
     </>
