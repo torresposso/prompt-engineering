@@ -1,8 +1,8 @@
 import { OpenAI } from "https://deno.land/x/openai@1.3.1/mod.ts";
 
-const OPENAI_API_SECRET_KEY = Deno.env.get("OPENAI_API_SECRET_KEY") as string;
+const OPENAI_SECRET_KEY = Deno.env.get("OPENAI_SECRET_KEY") as string;
 
-const openAI = new OpenAI(OPENAI_API_SECRET_KEY);
+const openAI = new OpenAI(OPENAI_SECRET_KEY);
 
 export async function chatCompletion(userInput: string) {
   const prompt = `
